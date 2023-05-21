@@ -1,6 +1,10 @@
 #  Требуется вывести все целые степени двойки (т.е. числа вида 2k), не превосходящие числа N.
 n = int(input('vvedite chislo '))
 num = 0
-while  2**num <= n:
-  print(2**num)
-  num+=1
+i=0
+for i in range(n):
+    num= 2**i
+    if num <= n :
+        print(f'chislo {num}')
+else :
+  quit()
